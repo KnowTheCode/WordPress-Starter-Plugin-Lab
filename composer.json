@@ -1,0 +1,37 @@
+{
+    "name" 			: "knowthecode/wordpress-starter-plugin",
+    "description" 	: "Know the Code Starter Sandbox plugin.  Use this plugin for all of the Know the Code demo Labs and Docx.",
+    "type"          : "project",
+    "keywords" 		: ["wordpress", "wp", "plugin"],
+    "homepage" 		: "https://knowthecode.io",
+    "license" 		: "GPL-2.0+",
+    "authors": [
+        {
+            "name" 	: "hellofromTonya",
+            "email" : "hellofromtonya@knowthecode.io"
+        }
+    ],
+    "require": {
+        "php" : ">=5.4.0"
+    },
+    "require-dev": {
+        "raveren/kint" : "~1.0",
+        "filp/whoops": "~2.0"
+    },
+    "autoload" : {
+        "classmap": [],
+        "files": [
+            "src/support/exceptions.php",
+            "src/sandbox.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "vendor-dir": "assets/vendor"
+    },
+    "minimum-stability": "dev"
+}
