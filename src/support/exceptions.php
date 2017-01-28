@@ -13,7 +13,16 @@ namespace KnowTheCode;
 use Whoops\Handler\PrettyPageHandler;
 use Whoops\Run;
 
-add_action( 'init', __NAMESPACE__ . '\load_whoops', 1 );
+/**
+ * One option is to load Whoops when the `init` event fires.
+ * But if an error occurs _before_ that event, the ugly PHP
+ * error wrapper will display.
+ *
+ * Therefore, another option is to simply call `load_whoops()` at the
+ * bottom of this file.  Then it loads at the start of the plugin.
+ */
+
+//add_action( 'init', __NAMESPACE__ . '\load_whoops', 1 );
 /**
  * Load Whoops.
  *
@@ -28,3 +37,5 @@ function load_whoops() {
 	$whoops->pushHandler( $error_page );
 	$whoops->register();
 }
+
+load_whoops();
