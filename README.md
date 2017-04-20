@@ -20,6 +20,13 @@ This plugin includes the following features:
 4. Go into the new folder
 5. Run `composer install` in terminal or Git Bash to bring in the dependencies and install Composer locally.
 
+Installation from GitHub is as simple as cloning the repo onto your local machine.  To clone the repo, do the following:
+
+1. Using PhpStorm, open your project and navigate to `wp-content/plugins/`. (Or open terminal and navigate there).
+2. Then type: `git clone https://github.com/KnowTheCode/WordPress-Starter-Plugin-Lab`.
+3. Go into the new folder
+4. Run `composer install` in terminal to bring in the dependencies and install Composer locally.
+
 ### Updating to New Kint
 
 If you have the old version of Kint, do the following:
@@ -27,14 +34,7 @@ If you have the old version of Kint, do the following:
 1. Change the dependency in your `composer.json` file to `"kint-php/kint" : "^1.0",`
 2. Run `composer update` in terminal or Git Bash to update all of the dependencies to the latest versions, including Kint.
 
-That's it.  
-
-Installation from GitHub is as simple as cloning the repo onto your local machine.  To clone the repo, do the following:
-
-1. Using PhpStorm, open your project and navigate to `wp-content/plugins/`. (Or open terminal and navigate there).
-2. Then type: `git clone https://github.com/KnowTheCode/WordPress-Starter-Plugin-Lab`.
-3. Go into the new folder
-4. Run `composer install` in terminal to bring in the dependencies and install Composer locally.
+That's it. 
 
 ## Contributions
 
