@@ -34,7 +34,7 @@ function load_whoops() {
 	$whoops     = new Run();
 	$error_page = new PrettyPageHandler();
 	$error_page->setEditor( 'sublime' );
-	$whoops->pushHandler( $error_page );
+	$whoops->prependHandler( $error_page );
 	$whoops->register();
 }
 
